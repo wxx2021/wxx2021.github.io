@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GAIE2024</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* body 样式 */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+p {
+text-align: justify;
+}
+
+/* 标题 */
+.header {
+    padding: 20px;
+    text-align: center;
+    background: #008080;
+    color: white;
+}
+
+/* 标题字体加大 */
+.header h1 {
+	text-align: right;
+	vertical-align:top;
+	font-size: 20px;
+	}
+.header h2{
+    font-size: 70px;
+	text-align: left;
+}
+.header h3 {
+	text-align: left;
+    font-size: 30px;
+}
+/* 导航 */
+.navbar {
+    overflow: hidden;
+    background-color: #5F9EA0;
+}
+
+/* 导航栏样式 */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* 右侧链接*/
+.navbar a.right {
+    float: right;
+}
+
+/* 鼠标移动到链接的颜色 */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* 列容器 */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* 创建两个列 */
+/* 边栏 */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* 主要的内容区域 */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* 测试图片 */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* 底部 */
+.footer {
+    padding: 10px;
+    text-align: left;
+    background: #008080;
+	color: white;
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+	<h1>Collocated with International Conference on Web-Based Learning 2024 (ICWL 2024)<br>
+International Symposium on Emerging Technologies for Education 2024 (SETE 2024)
+</h1>
+  <h2>GAIE 2024</h2>
+  <h3>The International Workshop on Generative Artificial Intelligence in Education</h3>
+</div>
+
+<div class="navbar">
+  <a href="index.html">HOME</a>
+  <a href="calls.html">CALLS</a>
+  <a href="submission.html">SUBMISSION</a>
+  <a href="organization.html">ORGANIZATION</a>
+  <a href="contact.html" class="right">CONTACTS</a>
+</div>
+
+<div class="row">
+  <div class="main">	  
+	  <h2>Paper Submission</h2>
+	  <p>All submissions must be in PDF format. Authors should avoid the use of non-English fonts to avoid problems with printing and viewing the submissions. All accepted papers MUST follow strictly the instructions for LNCS Authors. Springer's LNCS site offers style files and information. Formats for the submissions are either Long Paper (12-15 pages) or Short Paper (6-11 pages), including main content and references. Extra pages will have a cost of 100 AUD to Springer during publication.
+	<br><br>
+	Submissions MUST not have been published previously and must not be under review for publication while being considered for GAIE. This applies also to papers with significantly overlapping contributions. Authors are advised to interpret these limitations strictly and to contact the workshop chairs in case of doubt.
+	<br><br>
+	Submissions MUST follow LNCS (Lecture Notes in Computer Science) format. We encourage authors to cite related work comprehensively, and when citing conference papers please also consider to cite their extended journal versions if applicable.
+	<br><br>
+	Each accepted paper must be accompanied by at least one full registration regardless of the status of the registering author. Otherwise, the paper will be removed from the proceedings and LNCS digital library.
+	<br><br>
+	<b>Paper Submission System is Available at：<b><a href=" https://easychair.org/conferences/?conf=gaie2024">https://easychair.org/conferences/?conf=gaie2024</a>
+	  </p>
+	  <br>
+	  <h2>Registration Requirements</h2>
+		<p>Each accepted paper must be accompanied by at least one full conference registration. For more information regarding registration see the <a href="https://icwl-sete.au/ICWL.html">ICWL-SETE 2024</a> registration page.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h4>© GAIE 2024<br>
+Last update: March 5, 2024</h4>
+</div>
+
+</body>
+</html>
