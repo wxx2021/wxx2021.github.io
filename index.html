@@ -7,67 +7,58 @@
 <style>
 a:link {color: #4682B4;}
 a:visited {color: #004669;}
-a:hover {color: #FFFF00;}
-a:active {color: #FFFF00;}
+a:hover {color: #000080;}
+a:active {color: #000080;}
 .left {float: left;}
 .right {float: right;}
 .clear {clear: both;}
 .title {font-size: 16px; font-weight: bold; margin: 20px 0 10px 0;}
 .disabled {color: gray;}
 body {background-color: #E0E0E0; padding: 0; margin: 0; font-family: "Arial", "Helvetica", "sans-serif"; color: #000000; font-size: 16px;}
-#container {width: 1000px; height: auto; margin: 0 auto 20px auto; padding: 0; background-color: #FFFFFF;}
-#header {height: 200px; width: 1000px; white-space: nowrap; overflow: hidden;background-image: url('background.png');background-size: 100%;}
-#header h1{	text-align: right;vertical-align:top;	font-size: 12px; color: white;	}
-#main {height: auto; width: 1000px;}
-#menu {float: left; width: 199px; margin: 0; padding: 0; border-right: 1px solid #1A632C;}
-#menu .item {display: block; width: 190px; margin: 2px; padding: 8px 3px 8px 3px;}
-#menu a {text-decoration: none;}
-#menu a:link {color: #000080;}
-#menu a:visited {color: #004669;}
-#menu a:hover {color: #000000; background-color: #5F9EA0;}
-#menu a:active {color: #000000; background-color: #5F9EA0;}
-#menu .line {margin-top: 3px 0; padding: 0; height: 0px; line-height: 0; border: 0; border-bottom: 1px solid #4682B4; color: #4682B4; width: 199px;}
-#content {float: left; width:710px; padding-left: 50px; height: auto;}
-#content p {text-align: justify;}
-#footer {width: 1000px; margin: 10px 0 10px 0; padding: 10px 0 10px 0; border-top: 1px dashed gray;}
-/* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
-@media screen and (max-width: 700px) {
-    .row {   
-        flex-direction: column;
-    }
-}
+.container {width: 1000px; height: auto; margin: 0 auto 20px auto; padding: 0; background-color: #FFFFFF;}
+.header {height: 200px; width: 1000px; white-space: nowrap; overflow: hidden;background-image: url('background.png');background-size: 100%;}
+.header h1{	text-align: right;vertical-align:top;	font-size: 12px; color: white;	}
+.main {height: auto; width: 1000px;}
+.menu {float: left; width: 199px; margin: 0; padding: 0; border-right: 1px solid #4682B4;}
+.menu .item {display: block; width: 190px; margin: 2px; padding: 8px 3px 8px 3px;}
+.menu a {text-decoration: none;}
+.menu a:link {color: #000080;}
+.menu a:visited {color: #004669;}
+.menu a:hover {color: #000000; background-color: #5F9EA0;}
+.menu a:active {color: #000000; background-color: #5F9EA0;}
+.menu .line {margin-top: 3px 0; padding: 0; height: 0px; line-height: 0; border: 0; border-bottom: 1px solid #4682B4; color: #4682B4; width: 199px;}
+.content {float: left; width:710px; padding-left: 50px; height: auto;}
+.content p {text-align: justify;}
+.footer {width: 1000px; margin: 10px 0 10px 0; padding: 10px 0 10px 0; border-top: 1px dashed gray;}
 
-/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
-@media screen and (max-width: 400px) {
-    .navbar a {
-        float: none;
-        width: 100%;
-    }
-}
 </style>
 </head>
 
 	<body>
-		<div id="container">
-	<div id="header">
+		<div class="container">
+	<div class="header">
 	<h1>Collocated with International Conference on Web-Based Learning 2024 (ICWL 2024)<br>
 International Symposium on Emerging Technologies for Education 2024 (SETE 2024)
 	</h1>
 	</div>
 		
-	<div id="main">
-		<div id="menu">
+	<div class="main">
+		<div class="menu">
 			<div class="line"></div>
 			<div><a class="item" href="index.html">Call for Papers</a></div>
 			<div class="line"></div>
 			<div><a class="item" href="organization.html">Organization</a></div>
 			<div class="line"></div>
+			<div><a class="item" href="dates.html">Important Dates</a></div>
+			<div class="line"></div>
 			<div><a class="item" href="submission.html">Paper Submission</a></div>
 			<div class="line"></div>
-			<div><a class="item disabled" href="#">Contact Us</a></div>
+			<div><a class="item" href="registration.html">Registration</a></div>
+			<div class="line"></div>
+			<div><a class="item" href="contact.html">Contact</a></div>
 			<div class="line"></div>
 		</div>
-		<div id="content">
+		<div class="content">
 			<p style="font-size: 30px; font-weight: bold; text-align: center;">
 				The International Workshop on Generative Artificial Intelligence in Education<br>(GAIE 2024)
 			</p>
@@ -75,10 +66,14 @@ International Symposium on Emerging Technologies for Education 2024 (SETE 2024)
 		<div class="title">About GAIE 2024</div>
 		
 		<p>Generative AI (GAI) technologies, including generative adversarial networks (GANs), generative pre-trained transformer (GPT) and large language models (LLMs), are revolutionizing education by providing learners and educators a more innovative, flexible and personalized education environment to enhance teaching and learning experiences. With the exponential growth of online learning platforms and digital content, educators encounter the challenges of utilizing such extensive education resource and recommending tailored materials to individual learners. Demonstrating effectiveness in natural language generation and creative design, GAI models are garnering significant interest and demand, particularly for assisting in personalized tutoring, content creation, and developing virtual learning environments. The incorporation of GAI technologies enhances education by making it more engaging, accessible, and tailored to the specific needs of individual learners, as well as dismantling language barriers. As such, this workshop aims to group researchers interested in GAI applications across all aspects of technology-enhanced education, facilitating communication among educators, linguistic experts, data specialists and AI researchers. We hope that applying GAI in education can enhance the learning experience, leading towards greater effectiveness, efficiency and personalized in learning. The International Workshop on Generative Artificial Intelligence in Education (GAIE) aims to provide a platform for researchers in exchanging the most recent achievements of theories, datasets, methods, metrics, applications, etc. for the development of the interdisciplinary area.</p>
+		
+		<p>
+		This workshop is affiliated to the International Symposium on Emerging Technologies for Education 2024 (<a href="https://icwl-sete.au/SETE.html">SETE 2024</a>), in conjunction with the International Conference on Web-Based Learning 2024 (<a href="https://icwl-sete.au/ICWL.html">ICWL 2024</a>), to be held in Shanghai, China.
+		</p>
 
 		<div class="title">Workshop topics of interest include, but are not limited to, the following:</div>
 	  <ul> 
-             <li>Large Language Models (LLMs) and its applications in Education </li>
+             <li>Large Language Models (LLMs) and its Applications in Education </li>
              <li>Large Models / Foundation Models for Education</li>
              <li>Development and Implementation of Multimodal Models in Education</li>
              <li>AI Generated Content (AIGC) for Education</li>
@@ -89,7 +84,7 @@ International Symposium on Emerging Technologies for Education 2024 (SETE 2024)
              <li>Natural Language Processing in Education</li>
              <li>Big Data in Technology-Enhanced Education</li>
              <li>Content Recommendation for Education Applications</li>
-             <li>Text Simplification and Summarization for Digital Education contents</li>
+             <li>Text Simplification and Summarization for Digital Education Contents</li>
              <li>Data Mining on Digital Education Resources</li>
              <li>Automatic Question Answering for Assisting Education</li>
              <li>Computational Linguistics for Education Data Processing and Evaluation</li>
@@ -97,13 +92,7 @@ International Symposium on Emerging Technologies for Education 2024 (SETE 2024)
              <li>Digital Libraries and Corpora for Education</li>
       </ul>
 		
-		<div class="title">Important Dates</div>
-      <ul> 
-             <li><b>Full paper submission: </b> July 1, 2024	 </li>
-			<li><b>Notification of acceptance: </b> August 20, 2024 </li>
-			<li><b>Camera-ready submission: </b> September 15, 2024 </li>
-			<li><b>Author Registration: </b> November 1, 2024 </li>
-      </ul>
+		
 		<br>
 		<br>
 		<br>
@@ -112,7 +101,7 @@ International Symposium on Emerging Technologies for Education 2024 (SETE 2024)
 		</div>
 		<div class="clear"></div>
 	</div>
-	<div id="footer">
+	<div class="footer">
 		<div style="text-align: center; font-size: small;">
 			Copyright &copy; 2024 GAIE
 		</div>
