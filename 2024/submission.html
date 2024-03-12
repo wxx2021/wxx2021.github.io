@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GAIE 2024</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+font-family: "Georgia";
+background-color: #f1f1f1;
+color: white;
+}
+.container {width: 1200px; height: auto; margin: 0 auto 20px auto; padding: 0; background-color: white;}
+.overlay {
+	top:0:
+  bottom: 0; 
+  color:white;
+  width: 100%;
+  transition: .5s ease;
+  opacity:1;
+  font-size: 15px;
+  padding: 10px;
+  text-align: right;
+  font-family: "Georgia";
+}
+a:link {color: #004265;}
+a:visited {color: #004265;}
+a:hover {color: #000080;}
+a:active {color: #000080;}
+/* 头部标题 */
+.header {
+  padding: 5px;
+  color:white;
+  background: black;
+  background-image: url('bk.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+ 
+.header h1 {
+background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+	text-align: center;
+	padding: 5px;
+  font-size: 35px;
+  color:white;
+  font-family: "Georgia";
+}
+ 
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+   font-family:"Verdana";
+  background-color: #004265;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+}
+/* 导航条链接 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+
+}
+
+ 
+/* 链接颜色修改 */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+ 
+ .topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/* 创建两列 */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 65%;
+}
+ 
+/* 右侧栏 */
+.rightcolumn {
+  float: left;
+  width: 35%;
+  font-family: "Georgia";
+  padding-left: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 60px;
+}
+ 
+/* 图像部分 */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+ 
+/* 文章卡片效果 */
+.card {
+  padding: 20px;
+  color: black;
+  margin-top: 20px;
+  text-align: justify;
+  font-family: "Georgia";
+  
+}
+
+.card h2{
+font-size: 18px;
+}
+
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+/* 底部 */
+.footer {
+  padding: 5px;
+  text-align: center;
+  background: #004265;
+  margin-top: 10px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+ .footer h2{
+ text-align: center;
+ color: white;
+ font-size: 15px;
+ }
+
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+ 
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+   <h1>The International Workshop on Generative <br>Artificial Intelligence in Education <br>(GAIE 2024)<br><br>
+   <div class="overlay">
+			Collocated with International Conference on Web-Based Learning 2024 (ICWL 2024) &<br> 
+International Symposium on Emerging Technologies for Education 2024 (SETE 2024)
+		</div>
+  </h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html">HOME</a>
+  <a href="organization.html">ORGANIZATION</a>
+  <a href="submission.html">SUBMISSION</a>
+   <a href="registration.html">REGISTRATION</a>
+  <a href="contact.html" style="float:right">CONTACT</a>
+</div>
+
+
+<div class="row" >
+  <div class="leftcolumn">
+    <div class="card">
+	<h2>Paper Submission</h2>
+	  <p>All submissions must be in PDF format. Authors should avoid the use of non-English fonts to avoid problems with printing and viewing the submissions. All accepted papers MUST follow strictly the instructions for LNCS Authors. Springer's LNCS site offers style files and information. Formats for the submissions are either Long Paper (12-15 pages) or Short Paper (6-11 pages), including main content and references. Extra pages will have a cost of 100 AUD to Springer during publication.
+	<br><br>
+	Submissions MUST not have been published previously and must not be under review for publication while being considered for GAIE. This applies also to papers with significantly overlapping contributions. Authors are advised to interpret these limitations strictly and to contact the workshop chairs in case of doubt.
+	<br><br>
+	Submissions MUST follow <a href="http://www.springer.com/computer/lncs/lncs+authors?SGWID=0-40209-0-0-0">LNCS (Lecture Notes in Computer Science) format</a>. We encourage authors to cite related work comprehensively, and when citing conference papers please also consider to cite their extended journal versions if applicable.
+	<br><br>
+	</p>
+	<h2>Paper Submission System is Available at：</h2>
+	<p><a href=" https://easychair.org/conferences/?conf=gaie2024">https://easychair.org/conferences/?conf=gaie2024</a></p>
+   
+    </div>
+	
+  </div>
+  <div class="rightcolumn">
+	<div class="card">
+      <h2>Important Date</h2>
+	  <!-- <p id="demo" style="font-size: 12px"></p>-->
+      <ul> 
+				 <li>Full paper submission: July 1, 2024 </li>
+				<li>Notification of acceptance: August 20, 2024 </li>
+				<li>Camera-ready submission: September 15, 2024 </li>
+				<li>Author registration: November 1, 2024 </li>
+		  </ul>
+    </div>
+    </div>
+	
+
+</div>
+
+<div class="footer">
+  <h2>Copyright &copy; 2024 GAIE</h2>
+</div>
+</div>
+</body>
+</html>
