@@ -151,19 +151,25 @@ font-size: 18px;
  font-size: 15px;
  }
 
-/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
   }
 }
- 
-/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
-@media screen and (max-width: 400px) {
-  .topnav a {
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
     float: none;
-    width: 100%;
+    display: block;
+    text-align: left;
   }
 }
 </style>
