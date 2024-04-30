@@ -152,7 +152,9 @@ font-size: 18px;
  }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -171,6 +173,13 @@ font-size: 18px;
     display: block;
     text-align: left;
   }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }
 </style>
 </head>
@@ -185,12 +194,13 @@ International Symposium on Emerging Technologies for Education 2024 (SETE 2024)
   </h1>
 </div>
 
-<div class="topnav">
+<div class="topnav" id="myTopnav">
   <a href="index.html">HOME</a>
   <a href="organization.html">ORGANIZATION</a>
   <a href="submission.html">SUBMISSION</a>
    <a href="registration.html">REGISTRATION</a>
-  <a href="contact.html" style="float:right">CONTACT</a>
+  <a href="contact.html">CONTACT</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
 
@@ -228,5 +238,15 @@ International Symposium on Emerging Technologies for Education 2024 (SETE 2024)
   <h2>Copyright &copy; 2024 GAIE</h2>
 </div>
 </div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </body>
 </html>
